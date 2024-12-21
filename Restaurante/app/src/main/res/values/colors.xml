@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#FF5722</color> <!-- Color principal -->
+    <color name="secondary_color">#4CAF50</color> <!-- Color secundario (verde) -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background_light">#F3F4F6</color>
+    <color name="blue">#3b5998</color>
+    <color name="red">#db4a39</color>
+</resources>

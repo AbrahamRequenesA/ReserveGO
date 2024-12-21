@@ -1,0 +1,22 @@
+<resources>
+    <string-array name="people_options">
+        <item>1 Persona</item>
+        <item>2 Personas</item>
+        <item>3 Personas</item>
+        <item>4 Personas</item>
+        <item>5+ Personas</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>Ciudad de México</item>
+        <item>Guadalajara</item>
+        <item>Monterrey</item>
+        <item>Cancún</item>
+        <item>Puebla</item>
+        <item>Querétaro</item>
+        <item>Los Cabos</item>
+        <item>Oaxaca</item>
+        <item>Acapulco</item>
+        <item>Merida</item>
+    </string-array>
+</resources>

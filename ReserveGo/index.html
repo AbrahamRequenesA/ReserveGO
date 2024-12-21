@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incio - ReserveGo </title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header (Nav) -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/Logo.png" alt="ReserveGo Logo">
+                <a href="index.html">ReserveGo</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="#restaurantes" class="nav-link">Restaurantes</a>
+                <a href="#mapa" class="nav-link">Mapa</a>
+                <a href="contact.html" class="nav-link">Contacto</a>
+    
+                <div class="auth-links" id="auth-links">
+                    <!-- Sección que se mostrará si el usuario está logueado -->
+                    <div class="user-info" id="user-info">
+                        <span id="user-name"></span>
+                        <button id="logout-btn" class="logout-btn" style="display:none;">Cerrar sesión</button>
+                    </div>
+                    <a href="login.html" class="login-btn" id="login-link" style="display:none;">Iniciar Sesión</a>
+                    <a href="registro.html" class="register-btn" id="register-link" style="display:none;">Registrarse</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Intro Section -->
+        <section class="intro">
+            <div class="container">
+                <h2>Descubre los Mejores Restaurantes</h2>
+                <p>Explora, reserva y disfruta de increíbles experiencias gastronómicas con ReserveGo. Encuentra los mejores restaurantes cerca de ti con un solo clic.</p>
+            </div>
+        </section>
+
+        <section class="restaurant-search-section">
+            <div class="container">
+                <div class="search-filter-container">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="restaurant-search" placeholder="Buscar restaurantes..." class="search-input">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    
+                    <div class="filter-wrapper">
+                        <select id="cuisine-filter" class="filter-select">
+                            <option value="">Tipo de Cocina</option>
+                            <!-- Cocina internacional -->
+                            <option value="mexicana">Mexicana</option>
+                            <option value="italiana">Italiana</option>
+                            <option value="china">China</option>
+                            <option value="japonesa">Japonesa</option>
+                            <option value="coreana">Coreana</option>
+                            <option value="india">India</option>
+                            <option value="tailandesa">Tailandesa</option>
+                            <!-- Tipos específicos -->
+                            <option value="pizzería">Pizzería</option>
+                            <option value="sushi">Sushi</option>
+                            <option value="hamburguesas">Hamburguesas</option>
+                            <option value="mariscos">Mariscos</option>
+                            <option value="carnes">Carnes</option>
+                            <option value="vegetariana">Vegetariana</option>
+                            <option value="vegana">Vegana</option>
+                            <!-- Cocina regional -->
+                            <option value="americana">Americana</option>
+                            <option value="tex-mex">Tex-Mex</option>
+                            <option value="barbacoa">Barbacoa</option>
+                            <!-- Otras opciones -->
+                            <option value="comida rápida">Comida Rápida</option>
+                            <option value="parrilla">Parrilla</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        
+                        <!-- Filtro de precio -->
+                        <select id="price-filter" class="filter-select">
+                            <option value="">Nivel de Precio</option>
+                            <option value="$">Económico</option>
+                            <option value="$$">Medio</option>
+                            <option value="$$$">Alto</option>
+                        </select>
+                    
+                        <!-- Filtro de calificación -->
+                        <select id="rating-filter" class="filter-select">
+                            <option value="0">Calificación mínima</option>
+                            <option value="1">1 estrella</option>
+                            <option value="2">2 estrellas</option>
+                            <option value="3">3 estrellas</option>
+                            <option value="4">4 estrellas</option>
+                            <option value="5">5 estrellas</option>
+                        </select>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    
+    
+        <!-- Map Section -->
+        <section id="mapa" class="map-section">
+            <div class="container">
+                <div id="map"></div>
+            </div>
+        </section>
+
+        <!-- Restaurants Section -->
+        <section id="restaurantes" class="cards-container">
+            </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ReserveGo - Todos los derechos reservados</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    
+ <!-- Enlace al script externo de JavaScript -->
+ <script src="app.js"></script>
+ <script src="script.js"></script>
+
+
+ <!-- Cargar Google Maps con tu API Key -->
+ <script async defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB78UbXtiHkumkRzO3tC0no0C5A98yBkZM&callback=initMap">
+ 
+ 
+ </script>
+ <script async defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB78UbXtiHkumkRzO3tC0no0C5A98yBkZM&libraries=places,geometry&callback=initMap">
+ </script>
+
+ 
+
+
+</body>
+</html>
+
+
+
+
+
